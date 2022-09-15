@@ -3,7 +3,7 @@ package chapter09.EX04;
 class Student{
 	
 	
-	static int seriolNum = 1000;	//모든 객체에서 공유하는 필드, 객체를 생성할때 마다 1씩 증가
+	static int serialNum = 1000;	//모든 객체에서 공유하는 필드, 객체를 생성할때 마다 1씩 증가
 	int studentID;			//학생 공유ID
 	String studentName;		//학생 이름
 	int grade;				//학년 : 기본값으로 4 학년
@@ -11,8 +11,8 @@ class Student{
 	
 	//기본 생성자
 	Student () {
-		seriolNum++;	//객체를 생성시 1씩 증가, 모든 객체에서 공유해서 사용
-		studentID = seriolNum;
+		serialNum++;	//객체를 생성시 1씩 증가, 모든 객체에서 공유해서 사용
+		studentID = serialNum;
 		grade = 4;
 		address = "서울";
 	}
@@ -25,7 +25,7 @@ class Student{
 	
 	
 	void print () {
-		System.out.println("학번 :" + seriolNum);
+		System.out.println("학번 :" + serialNum);
 		System.out.println("학생 공유ID :" + studentID);
 		System.out.println("학생이름 :" + studentName);
 		System.out.println("학년 :" + grade);
