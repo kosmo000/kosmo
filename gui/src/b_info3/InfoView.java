@@ -1,4 +1,4 @@
-package b_info;
+package b_info3;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
